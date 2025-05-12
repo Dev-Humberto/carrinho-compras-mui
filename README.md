@@ -70,11 +70,7 @@ Um carrinho de compras moderno desenvolvido com React, TypeScript e Vite, utiliz
   
   Executar testes E2E
 
-    - yarn test:e2e
+    - yarn cy:open
       ou
-    - npm run test:e2e
-  
-  Executar testes de componentes
-    - yarn test:component
-      ou
-    - npm run test:component
+    - npm run cy:open
+
