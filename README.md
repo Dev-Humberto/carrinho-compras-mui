@@ -1,54 +1,94 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um carrinho de compras moderno desenvolvido com React, TypeScript e Vite, utilizando Material-UI para a interface e Cypress para testes.
 
-Currently, two official plugins are available:
+#  Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  - Adição/remoção de produtos
 
-## Expanding the ESLint configuration
+ - Ajuste de quantidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ - Cálculo automático de totais
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+ - Design responsivo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ - Testes E2E e de componentes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ - Performance otimizada com Vite
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+ # Tecnologias
+
+  - React
+
+  - TypeScript
+
+  - Vite
+
+  - Material-UI (MUI)
+
+  - Cypress
+
+# Como Executar
+  
+  Pré-requisitos
+  
+   - Node.js (v16 ou superior)
+
+   - Yarn ou npm
+
+# Instalação
+  1 - Clone o repositório
+
+    git clone https://github.com/seu-usuario/carrinho-compras-mui.git
+    cd carrinho-compras-mui
+  
+  2 - Instale as dependências
+  
+  yarn install
+    ou
+  npm install
+
+  # Executando o Projeto
+
+  Modo desenvolvimento
+
+   - yarn dev
+      ou
+   - npm run dev
+
+  Build para produção
+   - yarn build
+      ou
+   - npm run build
+
+  Preview da build
+    - yarn preview
+      ou
+    - npm run preview
+
+# Testes
+  
+  Executar testes E2E
+
+    - yarn test:e2e
+      ou
+    - npm run test:e2e
+  
+  Executar testes de componentes
+    - yarn test:component
+      ou
+    - npm run test:component
+
+# Estrutura de Arquivos
+
+  src/
+  ├── assets/           # Arquivos estáticos
+  ├── components/       # Componentes React
+  │   ├── CartItem.tsx
+  │   ├── ProductCard.tsx
+  │   └── CartSummary.tsx
+  ├── types/            # Tipos TypeScript
+  ├── App.tsx           # Componente principal
+  └── main.tsx          # Ponto de entrada
+  cypress/              # Testes E2E e de componentes
+  public/               # Arquivos públicos

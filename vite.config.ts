@@ -1,22 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import istanbul from 'vite-plugin-istanbul'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    istanbul({
-      include: 'src/*',
-      exclude: ['node_modules', 'test/'],
-      extension: ['.js', '.ts', '.tsx'],
-      requireEnv: false,
-    })
-  ],
-  server: {
-    host: true,
-    port: 5173
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
-  build: {
-    sourcemap: true
-  }
-})
+});
