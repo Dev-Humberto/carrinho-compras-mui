@@ -78,17 +78,3 @@ Um carrinho de compras moderno desenvolvido com React, TypeScript e Vite, utiliz
     - yarn test:component
       ou
     - npm run test:component
-
-# Estrutura de Arquivos
-
-  src/
-  ├── assets/           # Arquivos estáticos
-  ├── components/       # Componentes React
-  │   ├── CartItem.tsx
-  │   ├── ProductCard.tsx
-  │   └── CartSummary.tsx
-  ├── types/            # Tipos TypeScript
-  ├── App.tsx           # Componente principal
-  └── main.tsx          # Ponto de entrada
-  cypress/              # Testes E2E e de componentes
-  public/               # Arquivos públicos
