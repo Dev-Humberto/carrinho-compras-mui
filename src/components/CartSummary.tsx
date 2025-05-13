@@ -40,6 +40,7 @@ const CartSummary: React.FC<CartSummaryProps> = ({ cartItems, onCheckout }) => {
         </ListItem>
       </List>
       <Button
+        data-testid="checkout-button"
         variant="contained"
         color="primary"
         fullWidth
